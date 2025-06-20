@@ -1,0 +1,90 @@
+body {
+  text-align: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#level-title {
+  color: #FEF2BF;
+  font-size: 2rem;
+  margin: 30px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.container {
+  width: fit-content;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.green {
+  background: linear-gradient(145deg, #32cd32, #228b22);
+}
+
+.red {
+  background: linear-gradient(145deg, #ff4c4c, #b22222);
+}
+
+.yellow {
+  background: linear-gradient(145deg, #ffff66, #cccc00);
+}
+
+.blue {
+  background: linear-gradient(145deg, #4ca3dd, #1e90ff);
+}
+
+.pressed {
+  background-color: #b22222;
+  box-shadow: 0 0 20px rgb(220, 4, 4);
+  opacity: 0.6;
+  
+}
+
+.game-over {
+  background-color: red !important;
+  transition: background-color 0.3s ease;
+}
+
+
+.github-link {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #222;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #fff3;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.github-link:hover {
+  background-color: #444;
+  /* transform: scale(1.05); */
+}
